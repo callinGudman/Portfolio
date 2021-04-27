@@ -1,91 +1,221 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<section class="sub-header">
-    <nav>
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    box-sizing:border-box;
 
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" ></i>
+}
+html{
+    font-size:62.5%;
+}
+.sub-header{
+    min-height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(images/bodyBackground.jpg);
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items:center;
+}
 
-            <ul>
-                <li><a href="index.html">MY PROJECTS</a></li>
-                <li><a href="#footer">CONTACT</a></li>
-            </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+.nav-links{
+    flex:1;
+    text-align:center;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding:0.8rem 1.2rem;
+    position:relative;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:1.8rem;
+    width:100%;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:0.2rem;
+    background:pink;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+#port{
 
-    </nav>
-<section id = "port">
-    <h1><a href="https://www.alice-wonders.com/"  target="_blank" >Alice-wonders</a></h1>
-    <a href="https://www.alice-wonders.com/"  target="_blank" ><img src="images/1.jpg"></a>
-    <h2><a href="https://callingudman.github.io/Eduford-University/" target="_blank">Eduford University</a></h2>
-    <a href="https://callingudman.github.io/Eduford-University/" target="_blank"><img src="images/2.png"></a>
-    <h3><a href="http://govegankiko.freecluster.eu/wordpress/" target="_blank">Vegan website</a> </h3>
-    <a href="http://govegankiko.freecluster.eu/wordpress/" target="_blank"><img src="images/3.png"></a>
-    <h4><a href="https://callingudman.github.io/mathStatistic/" target="_blank">Mathematical statistics</a></h4>
-    <a href="https://callingudman.github.io/mathStatistic/" target="_blank"><img src="images/4.png"></a>
-    <h5><a href="http://gympower.lovestoblog.com/" target="_blank">Yoga classes</a> </h5>
-    <a href="http://gympower.lovestoblog.com/" target="_blank"><img src="images/5.png"></a>
+    background-image: url("images/bodyBackground.jpg");
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1rem;
+}
 
 
-</section>
-<!---social-icons--->
 
-<div class="social-icons">
-    <a href="https://www.facebook.com/kalin.todorov.7/"  target="_blank" > <img src="images/facebook.png"></a>
-    <a href="https://www.instagram.com/callin1gudman/"  target="_blank" ><img src="images/instagram.png"></a>
-    <a href="https://twitter.com/GodsFut17"  target="_blank" ><img src="images/twitter.png"></a>
-    <a href="https://www.linkedin.com/in/kalin-todorov-46b318205/"  target="_blank" ><img src="images/linkedin.png"></a>
-</div>
-<!---Footer--->
+#port h1,h2,h3,h4,h5{
+    text-align: center;
+    font-size: 2rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:5rem;
+    height: 4rem;
 
-<section id="footer">
-    <div class="container footer-row">
-        <hr>
-        <div class="footer-left-col">
-            <div class="footer-links">
-                <div class="link-title">
-                    <h4>Product</h4>
-                    <small>Our Plan</small><br>
-                    <small>Free Trial</small>
-                </div>
-                <div class="link-title">
-                    <h4>About Us</h4>
-                    <small>Request Demo</small><br>
-                    <small>FAQs</small>
-                </div>
-                <div class="link-title">
-                    <h4>Support</h4>
-                    <small>Features</small><br>
-                    <small>Contact Us</small>
-                </div>
-                <div class="link-title">
-                    <h4>Explore</h4>
-                    <small>Find a nonprofit</small><br>
-                    <small>Corporate Solution</small>
-                </div>
-            </div>
-        </div>
-        <div class="footer-right-col">
-            <div class="footer-info">
-                <div class="copyright-text">
-                    <small>Kalintodorov87@gmail.com</small><br>
-                    <small>copyright 2021 </small>
-                </div>
-                <div class="footer-logo">
-                    <img src ="images/logo1.png">
-                    <button class="common-btn">English</button>
-                </div>
 
-            </div>
-        </div>
-</section>
-</body>
+}
+a {
+    color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top:1rem;
 
-</html>
+}
+#port h1{
+    background-color: black;
+    color:#4ebf38;
+    font-weight: lighter;
+}
+#port h2{
+    background-color:#1b3050 ;
+    color:white;
+    font-weight: lighter;
+}
+#port h3{
+    background-color: black;
+    color:#4ebf38;
+    font-weight: lighter;
+}
+#port h4 {
+    background-color: #1d312f;
+    color: pink;
+    font-weight: lighter;
+}
+#port h5 {
+    background-color: #e6dbc9;
+    color: red;
+    font-weight: lighter;
+}
+#port img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top:1rem;
+}
+/*---social-icons---*/
+.social-icons{
+    width:5rem;
+    position:fixed;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    z-index:1;
+}
+.social-icons img{
+    display:block;
+    width:2rem;
+    margin:0 auto 2rem;
+    cursor:pointer;
+}
+
+/*---footer---*/
+
+#footer{
+    padding:5rem 0 3rem;
+}
+hr{
+    width:100%;
+    border:0;
+    border-top:0.1rem solid pink;
+}
+.footer-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.footer-left-col{
+    flex-basis:50%;
+    margin-top:6rem;
+}
+.footer-right-col{
+    flex-basis:35%
+}
+.footer-links{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.link-title h4{
+    color:pink;
+    margin-bottom:2rem;
+    font-size: 1rem;
+    margin-left: 4rem;
+}
+.link-title small{
+    font-size:1.3rem;
+    color:white;
+    margin-left: 4rem;
+}
+.footer-info{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.footer-logo img{
+    width:15rem;
+}
+.footer-logo button{
+    padding: 1.2rem 3.8rem;
+    margin-top:2rem;
+    font-size:1rem;
+}
+.copyright-text,.footer-logo{
+    flex-basis:45%;
+    font-size: 2rem;
+    color:pink;
+}
+@media only screen and (max-width:700px){
+a {
+    color: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top:1rem;
+
+}
+.footer-left-col,.footer-right-col{
+	flex-basis:100%;
+	}
+	.footer-logo {
+    display:none;
+}
+.copyright-text,.footer-logo{
+    flex-basis:100%;
+    font-size: 2rem;
+    color:pink;
+	text-align:center;
+	margin-top:2rem;
+}
+.link-title h4{
+    
+    margin-bottom:0;
+    
+}
+}
+  
