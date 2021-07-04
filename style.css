@@ -64,7 +64,7 @@ nav{
 
 
 
-#port h1,h2,h3,h4,h5,h6,.h7{
+#port h1,h2,h3,h4,h5,h6,{
     text-align: center;
     font-size: 2rem;
     width: 60%;
@@ -114,11 +114,7 @@ a {
     color: black;
     font-weight: lighter;
 }
-#port .h7 {
-    background-color: #e9674f;
-    color: #ecce5e;
-    font-weight: lighter;
-}
+
 
 #port img{
     display: block;
@@ -232,7 +228,7 @@ a {
 #port h4 {
     font-size:1.7rem;
 }
-#port h1,h2,h3,h4,h5,h6,h7,.h7{
+#port h1,h2,h3,h4,h5,h6,h7,{
     width: 80%;
 	display:inline-block;
 	margin-left:10%;
